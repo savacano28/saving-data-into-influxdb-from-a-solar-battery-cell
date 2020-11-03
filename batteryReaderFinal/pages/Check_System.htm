@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://isdiv326573:81/Check_System/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge" http-equiv="x-ua-compatible">
+<title></title>
+    <script src="./checksystem_files/jquery-1.8.3.min.js.téléchargement"></script>
+    <link href="./checksystem_files/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+          $(document).ready(function () {
+             $('#CHKsys').load('/Check_System_inner');
+             
+             
+          });
+    </script>
+    <script>
+    var refreshId = setInterval(function()
+    {
+         $('#CHKsys').load('/Check_System_inner');
+         
+    }, 2000);
+    </script>
+</head>
+    <body>
+		<b><font color="white">RCU: IFPen_Solaize</font></b>
+        <div id="cssmenu">
+        <ul>
+           <li><a href="http://isdiv326573:81/VI"><span>VI</span></a></li>
+           <li><a href="http://isdiv326573:81/Battery_Values"><span>Battery Values</span></a></li>
+           <li><a href="http://isdiv326573:81/SMA_A"><span>SMA A</span></a></li>
+	   <li><a href="http://isdiv326573:81/SMA_B"><span>SMA B</span></a></li>
+	   <li><a href="http://isdiv326573:81/Additional"><span>Additional</span></a></li>
+	   <li><a href="http://isdiv326573:81/Statistic"><span>Statistic</span></a></li>
+	   <li><a href="http://isdiv326573:81/Error"><span>Error</span></a></li>
+	   <li><a href="http://isdiv326573:81/Control"><span>Control</span></a></li>
+	   <li><a href="http://isdiv326573:81/Settings"><span>Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Alarm_Settings"><span>Alarm Settings</span></a></li>
+	   <li class="active"><a href="http://isdiv326573:81/Check_System"><span>Check System</span></a></li>
+	   <li><a href="http://isdiv326573:81/RMU_Settings"><span>RCU Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/RMU_Config"><span>RCU Config</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter_Settings"><span>Meter Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter"><span>Meter</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter_Visual"><span>Meter Visual</span></a></li>
+	   <li><a href="http://isdiv326573:81/Regulation"><span>Regulation</span></a></li>
+	   <!-- <li><a href='/Standard_Signals'><span>Standard Signals</span></a></li> -->
+        </ul>
+        </div>
+        <div id="CHKsys">
+
+<!------------------------------------ Check_System_site--------------------------> 
+<table id="table_1" align="center">
+    <tbody><tr>
+        <td>    
+        	<table id="table_innen"> 
+			<tbody><tr><td><b>(Non)Active</b><p></p></td></tr>
+			<tr>
+			     <th style="text-align:right">6 SMA System</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Island Mode</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_green.jpg"></td>
+			     <th style="text-align:left">&nbsp;active</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Battery Mode</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_green.jpg"></td>
+			     <th style="text-align:left">&nbsp;Power</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Battery Optimum Mode</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Generator Control</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Grid Feed Enabled (A)</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Grid Feed Enabled (B)</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Multicluster Master (A)</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Multicluster Master (B)</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">H2 Tank Sensor</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_black.jpg"></td>
+			     <th style="text-align:left">&nbsp;inactive</th>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Aircondition</th>
+			     <td>&nbsp;<img src="./checksystem_files/led_green.jpg"></td>
+			     <th style="text-align:left">&nbsp;active</th>
+			</tr>
+		</tbody></table>
+         </td>  
+         <td>
+		<table id="table_innen"> 
+			<tbody><tr><td><b>Check</b><p></p></td></tr>
+			<tr>
+			     <th style="text-align:right">Minimum SOC</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="1">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Low SOC</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Maximum SOC</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white" type="text" size="12" readonly="" value="100">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">SOC Start Generator</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:lightgrey;" type="text" size="12" readonly="" value="20">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">SOC Stop Generator</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:lightgrey" type="text" size="12" readonly="" value="30">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Modbus FBC ID</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">First Modbus Slave ID</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Number of Cluster Slaves</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="40">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Inverter Type</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:lightgrey;" type="text" size="12" readonly="" value="not defined">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Operation Mode SMA A</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:lightgrey;" type="text" size="12" readonly="" value="not defined">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Operation Mode SMA B</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:lightgrey;" type="text" size="12" readonly="" value="Multi Stage">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Number of Strings A</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white" type="text" size="12" readonly="" value="3">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Number of Strings B</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white" type="text" size="12" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+		</tbody></table>
+	</td>	
+         <td>
+		<table id="table_innen"> 
+			<tbody><tr><td><b>Time Tasks</b><p></p></td></tr>
+			<tr>
+			     <th style="text-align:right">Main</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="812">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Read and Check All ADCs</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="99">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">GetXIn</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="4">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">GetTigerADs</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">RunControlProcedures</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="73">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">X37</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="310">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">X38</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="625">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">X39</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">X40</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="533">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">RS485</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="695">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+		</tbody></table>
+	</td>	      
+         <td>
+		<table id="table_innen"> 
+			<tbody><tr><td><b>Analog Outputs</b><p></p></td></tr>
+			<tr>
+			     <th style="text-align:right">Pump 1</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="3.1">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Pump 2</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="3.0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Pump 3</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0.0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			<tr>
+			     <th style="text-align:right">Pump 4</th>
+			     <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:white;" type="text" size="12" readonly="" value="0.0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+			
+		</tbody></table>
+	</td>	       
+    </tr>
+</tbody></table>
+
+
+
+</div>
+        
+        
+        
+        
+        
+        
+    
+</body></html>

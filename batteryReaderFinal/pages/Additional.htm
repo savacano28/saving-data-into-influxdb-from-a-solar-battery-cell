@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://isdiv326573:81/Additional/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge" http-equiv="x-ua-compatible">
+<title></title>
+    <script src="./additional_files/jquery-1.8.3.min.js.téléchargement"></script>
+    <link href="./additional_files/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+          $(document).ready(function () {
+             $('#ADD').load('/Additional_inner');
+             
+             
+          });
+    </script>
+    <script>
+    var refreshId = setInterval(function()
+    {
+         $('#ADD').load('/Additional_inner');
+         
+    }, 2000);
+    </script>
+</head>
+    <body>
+		<b><font color="white">RCU: IFPen_Solaize</font></b>
+        <div id="cssmenu">
+        <ul>
+           <li><a href="http://isdiv326573:81/VI"><span>VI</span></a></li>
+           <li><a href="http://isdiv326573:81/Battery_Values"><span>Battery Values</span></a></li>
+           <li><a href="http://isdiv326573:81/SMA_A"><span>SMA A</span></a></li>
+	   <li><a href="http://isdiv326573:81/SMA_B"><span>SMA B</span></a></li>
+	   <li class="active"><a href="http://isdiv326573:81/Additional"><span>Additional</span></a></li>
+	   <li><a href="http://isdiv326573:81/Statistic"><span>Statistic</span></a></li>
+	   <li><a href="http://isdiv326573:81/Error"><span>Error</span></a></li>
+	   <li><a href="http://isdiv326573:81/Control"><span>Control</span></a></li>
+	   <li><a href="http://isdiv326573:81/Settings"><span>Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Alarm_Settings"><span>Alarm Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Check_System"><span>Check System</span></a></li>
+	   <li><a href="http://isdiv326573:81/RMU_Settings"><span>RCU Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/RMU_Config"><span>RCU Config</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter_Settings"><span>Meter Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter"><span>Meter</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter_Visual"><span>Meter Visual</span></a></li>
+	   <li><a href="http://isdiv326573:81/Regulation"><span>Regulation</span></a></li>
+	   <!-- <li><a href='/Standard_Signals'><span>Standard Signals</span></a></li> -->
+        </ul>
+        </div>
+        <div id="ADD">
+
+<!------------------------------------ADDITIONAL----------------------------------------> 
+<table id="table_1" align="center"><!--------------Main frame--------------->
+ 
+    <tbody><tr>
+        <td>
+            <table><!--------------Top frame--------------->
+    		<tbody><tr>		
+            	      <td><!--------------Top left frame--------------->
+				
+				    <th<< th="">
+					       </th<<><table id="table_innen"><!--------------FBC Support Battery----------------> 
+					<tbody><tr>
+					    <td><b>FBC Support Battery</b><p></p></td>
+					 </tr>    
+					 <tr>
+					     <th>Voltage [V]</th>
+					     <th>Current [A]</th>
+					 </tr>
+					 <tr>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="27.6">&nbsp;&nbsp;&nbsp;</form></td>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="-0.18">&nbsp;&nbsp;&nbsp;</form></td>
+					    <th style="text-align:right">Self Supply Active&nbsp;</th>
+					    <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">inactive</th>
+				         </tr>
+				          <tr>
+					     <td>&nbsp;</td>
+					  </tr>
+				        
+					
+
+					  
+
+					
+					
+					<tr><!--------------Device & Sensor Power Supply----------------> 
+					    <td><b>Device &amp; Sensor Power Supply</b><p></p></td>
+					    </tr><tr>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Power Mini PC&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;PowerIcpConA1&amp;A3&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					    </tr>
+					    <tr>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Reset UMTS&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">Off</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;PowerIcpConA2&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					    </tr>
+					    <tr>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Power OCV Cell&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">Off</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Jumper 12</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					    </tr>
+					    <tr>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;H2 Sensor ON&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">Off</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Jumper 13</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					    </tr>
+					    <tr>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Generator ON&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;PC Watchdog (Jumper 14)</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">On</th>
+					    </tr>
+					    <tr>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Load Drop&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">Off</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Ventilation (Jumper 15)</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">Off</th>
+					    </tr>
+					    <tr>
+					       <th></th>
+					       <th></th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Service Mode (jumper 16)</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">Off</th>
+					    </tr>
+					    
+					
+				    </tbody></table>
+				   
+				
+        
+				</td><td><!--------------Top right frame---------------->
+				<table id="table_innen"> 
+					<tbody><tr>
+					     <th>TargetPower [kW]</th>
+					     <th></th>
+					     <th>MaxTargetPower [kW]</th>
+					</tr>
+				    	<tr>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="-5.0">&nbsp;&nbsp;&nbsp;</form></td>
+					    <td></td>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="30.0">&nbsp;&nbsp;&nbsp;</form></td>
+					</tr>
+					<tr>
+					     <th>Possible Charge Power (A) [kW]</th>
+					     <th></th>
+					     <th>&nbsp;&nbsp;Possible Discharge Power (A) [kW]</th>
+					</tr>
+				    	<tr>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="7.0">&nbsp;&nbsp;&nbsp;</form></td>
+					    <td></td>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="7.0">&nbsp;&nbsp;&nbsp;</form></td>
+					</tr>
+					<tr>
+					     <th>MaxSOC [%]</th>
+					     <th></th>
+					     <th>Battery Mode</th>
+					</tr>
+				    	<tr>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="80.0">&nbsp;&nbsp;&nbsp;</form></td>
+					    <td></td>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" style="color:black; background-color:white" readonly="" value="Power Mode">&nbsp;&nbsp;&nbsp;</form></td>
+					</tr>
+					<tr>
+					     <th>Required Pump Pressure A</th>
+					     <th></th>
+					     <th>Required Pump Pressure B</th>
+					</tr>
+				    	<tr>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="300">&nbsp;&nbsp;&nbsp;</form></td>
+					    <td></td>
+					    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+					</tr>
+					<tr>
+					       <th>&nbsp;&nbsp;&nbsp;Charging Allowed&nbsp;</th>
+					       <th style="text-align:left"><img src="./additional_files/led_green.jpg" align="left">On</th>
+					       <th>&nbsp;&nbsp;&nbsp;Second DC Bus&nbsp;</th>
+					       <th style="text-align:left"><img src="./additional_files/led_black.jpg" align="left">Off</th>
+					</tr>
+					<tr>
+					       <th>&nbsp;&nbsp;&nbsp;2 Pump Stages active?&nbsp;</th>
+					       <th style="text-align:left"><img src="./additional_files/led_green.jpg" align="left">On</th>
+					       <th>&nbsp;&nbsp;&nbsp;Island Mode&nbsp;</th>
+					       <th style="text-align:left"><img src="./additional_files/led_green.jpg" align="left">On</th>
+					</tr>
+					<tr><td>&nbsp;</td></tr>
+					 <tr>
+					       <th>&nbsp;&nbsp;&nbsp;Service Mode Flag&nbsp;</th>
+					       <th></th>
+					       <th>&nbsp;&nbsp;&nbsp;SW-Version&nbsp;</th>
+					 </tr>
+					 <tr>   
+					      <th><img src="./additional_files/led_black.jpg">Off</th>
+					      <th></th>
+					      <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="25" style="color:black; background-color:white" readonly="" value="FBC SW Version V5.0.1">&nbsp;&nbsp;&nbsp;</form></td>
+					 </tr>     
+				   </tbody></table>	
+				</td>   
+		     	
+		</tr>	
+		
+		<tr>
+                                
+				</tr></tbody></table><table id="table_innen"><!--------------bottom frame----------------> 
+				<tbody><tr>
+				   <td>
+					<table><!--------------H2 Tank Sensor Values----------------> 
+					<tbody><tr>
+					    <td><b>H2 Tank Sensor Values</b><p></p></td>
+					    </tr><tr>
+					       <th>H2 Concentration [%]</th>
+					       <th>HW-Version</th>
+					       <th>Message Counter</th>
+					       <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					       <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Sensor&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_green.jpg" align="left">Ready</th>
+					    </tr>
+					    <tr>
+					       <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="0.0">&nbsp;&nbsp;&nbsp;</form></td>
+					       <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20" readonly="" value="H2ES Type A">&nbsp;&nbsp;&nbsp;</form></td>
+					       <td><form>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="0">&nbsp;&nbsp;&nbsp;</form></td>
+					       <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					       <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Error&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">no</th>
+					    </tr>
+					    <tr>
+					       <th>Board Temperature [℃]</th>
+					       <th>SW-Version</th>
+					       <th></th>
+					       <th></th>
+					       <th></th>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Performance Error&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">no</th>
+					       
+					    </tr>
+					    <tr>
+					       <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="90.2">&nbsp;&nbsp;&nbsp;</form></td>
+					       <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="4" readonly="" value="0.10">&nbsp;&nbsp;&nbsp;</form></td>
+					       <td></td>
+					       <td></td>
+					       <td></td>
+					       <th style="text-align:right">&nbsp;&nbsp;&nbsp;Functional Error&nbsp;</th>
+					       <th style="text-align:left">&nbsp;&nbsp;<img src="./additional_files/led_black.jpg" align="left">no</th>
+					    </tr> 
+					    
+					   
+					  
+					</tbody></table>
+				   </td>    
+				</tr>    
+				</tbody></table>
+		   		
+               </td></tr>
+		
+		
+		
+          </tbody></table>
+          
+         
+       
+         
+          
+    
+    
+      
+         			
+      
+    
+    
+    
+      
+    
+    
+     
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+</div>
+        
+        
+        
+        
+        
+        
+    
+</body></html>

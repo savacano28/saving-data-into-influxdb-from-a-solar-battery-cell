@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://isdiv326573:81/Statistic/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge" http-equiv="x-ua-compatible">
+<title></title>
+    <script src="./statistic_files/jquery-1.8.3.min.js.téléchargement"></script>
+    <link href="./statistic_files/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+          $(document).ready(function () {
+             $('#STAT').load('/Statistic_inner');
+             
+             
+          });
+    </script>
+    <script>
+    var refreshId = setInterval(function()
+    {
+         $('#STAT').load('/Statistic_inner');
+         
+    }, 2000);
+    </script>
+</head>
+    <body>
+		<b><font color="white">RCU: IFPen_Solaize</font></b>
+        <div id="cssmenu">
+        <ul>
+           <li><a href="http://isdiv326573:81/VI"><span>VI</span></a></li>
+           <li><a href="http://isdiv326573:81/Battery_Values"><span>Battery Values</span></a></li>
+           <li><a href="http://isdiv326573:81/SMA_A"><span>SMA A</span></a></li>
+	   <li><a href="http://isdiv326573:81/SMA_B"><span>SMA B</span></a></li>
+	   <li><a href="http://isdiv326573:81/Additional"><span>Additional</span></a></li>
+	   <li class="active"><a href="http://isdiv326573:81/Statistic"><span>Statistic</span></a></li>
+	   <li><a href="http://isdiv326573:81/Error"><span>Error</span></a></li>
+	   <li><a href="http://isdiv326573:81/Control"><span>Control</span></a></li>
+	   <li><a href="http://isdiv326573:81/Settings"><span>Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Alarm_Settings"><span>Alarm Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Check_System"><span>Check System</span></a></li>
+	   <li><a href="http://isdiv326573:81/RMU_Settings"><span>RCU Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/RMU_Config"><span>RCU Config</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter_Settings"><span>Meter Settings</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter"><span>Meter</span></a></li>
+	   <li><a href="http://isdiv326573:81/Meter_Visual"><span>Meter Visual</span></a></li>
+	   <li><a href="http://isdiv326573:81/Regulation"><span>Regulation</span></a></li>
+	   <!-- <li><a href='/Standard_Signals'><span>Standard Signals</span></a></li> -->
+        </ul></div>
+        <div id="STAT">
+
+<!------------------------------------ STATISTIC--------------------------> 
+<table id="table_1" align="center">
+    <tbody><tr>
+        <td>    
+        	<table id="table_innen_innen"> 
+			<tbody><tr><td><b>FBC Time</b><p></p></td></tr>
+			<tr>
+			     <th>Date</th>
+			     <th>Time</th>
+			     <th>Operation Hours</th>
+			</tr>
+			<tr>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="2018-10-19">&nbsp;&nbsp;&nbsp;</form></td>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="10:22:29">&nbsp;&nbsp;&nbsp;</form></td>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="7533.0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+               </tbody></table>
+               
+               <table id="table_innen_innen"> 
+			<tbody><tr>
+			     </tr><tr><td><b>Total Energy To/From Battery&nbsp;&nbsp;&nbsp;&nbsp;</b><p></p></td></tr>
+			     <tr><th>Energy In [kWh]</th>
+			     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Energy Out [kWh]&nbsp;&nbsp;&nbsp;</th>
+			</tr>
+			<tr>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="926687.9">&nbsp;&nbsp;&nbsp;</form></td>
+			    <td></td>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="30477.0">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+               </tbody></table>
+               
+                <table id="table_innen_innen"> 
+			<tbody><tr>
+			     </tr><tr><td><b>Total Energy To/From SMA (DC)</b><p></p></td></tr>
+			     <tr><th>Energy DC Input [kWh]</th>
+			     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			     <th>Energy DC Output [kWh]</th>
+			</tr>
+			<tr>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="13238.3">&nbsp;&nbsp;&nbsp;</form></td>
+			    <td></td>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="27053.8">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+               </tbody></table>
+               
+                <table id="table_innen_innen"> 
+			<tbody><tr>
+			     </tr><tr><td><b>Total Energy To/From SMA (AC)</b><p></p></td></tr>
+			     <tr><th>Energy AC Input [kWh]</th>
+			     <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			     <th>Energy AC Output [kWh]</th>
+			</tr>
+			<tr>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="9086.2">&nbsp;&nbsp;&nbsp;</form></td>
+			    <td></td>
+			    <td><form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="12" readonly="" value="3832.8">&nbsp;&nbsp;&nbsp;</form></td>
+			</tr>
+               </tbody></table>
+               
+               
+        
+        </td>
+        
+    </tr>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+</tbody></table></div>
+        
+        
+        
+        
+        
+        
+    
+</body></html>
