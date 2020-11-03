@@ -64,7 +64,4 @@ Maven
 **Authors** </br>
 Stephanya CASANOVA MARROQUIN - Initial work 
 
-**License** </br>
-IFPEN 
-
 **2018**
